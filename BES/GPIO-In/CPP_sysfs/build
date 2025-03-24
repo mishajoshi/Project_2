@@ -1,0 +1,12 @@
+#!/bin/bash
+g++ simple.cpp GPIO.cpp -o simple -pthread
+# Measure end-to-end latency
+g++ cpp_sysfs_bw_poll_echo.cpp GPIO.cpp -o cpp_sysfs_bw_poll_echo -pthread
+g++ cpp_sysfs_stream_bw_poll_echo.cpp GPIO.cpp -o cpp_sysfs_stream_bw_poll_echo -pthread
+# Use epoll to block until edges
+g++ cpp_sysfs_epoll_echo.cpp GPIO.cpp -o cpp_sysfs_epoll_echo -pthread
+g++ cpp_sysfs_epoll_tcb_echo.cpp GPIO.cpp -o cpp_sysfs_epoll_tcb_echo -pthread
+
+# g++ test_syspoll.cpp GPIO.cpp -o test_syspoll -pthread
+# g++ test_callback.cpp GPIO.cpp -o test_callback -pthread
+

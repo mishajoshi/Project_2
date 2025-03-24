@@ -1,0 +1,5 @@
+#!/bin/bash
+gcc c_devmem_echo.c -o c_devmem_echo -O3
+gcc c_devmem_edge.c -o c_devmem_edge -O3
+
+

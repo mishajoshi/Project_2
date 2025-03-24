@@ -1,0 +1,6 @@
+#!/bin/bash
+g++ simple.cpp GPIO.cpp -o simple -pthread
+g++ simple_out.cpp GPIO.cpp -o simple_out -pthread
+g++  cpp_sysfs_flash.cpp GPIO.cpp -o cpp_sysfs_flash -pthread
+g++  cpp_sysfs_stream_flash.cpp GPIO.cpp -o cpp_sysfs_stream_flash -pthread
+

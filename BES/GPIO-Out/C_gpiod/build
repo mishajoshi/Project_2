@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc c_gpiod_flash.c -o c_gpiod_flash -O3 -l gpiod

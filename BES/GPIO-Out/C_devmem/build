@@ -1,0 +1,4 @@
+#!/bin/bash
+gcc -O3 LEDflash.c -o LEDflash
+gcc -O3 c_devmem_flash.c -o c_devmem_flash
+

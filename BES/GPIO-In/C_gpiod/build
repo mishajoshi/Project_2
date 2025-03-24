@@ -1,0 +1,8 @@
+#!/bin/bash
+gcc c_gpiod_echo.c -o c_gpiod_echo -O3 -l gpiod
+gcc c_gpiod_edge.c -o c_gpiod_edge -O3 -l gpiod
+gcc c_gpiod_event.c -o c_gpiod_event -O3 -l gpiod
+# gcc tools-common.c gpiomonl.c -o gpiomonl -O3 -l gpiod
+# gcc tools-common.c gpiomonh.c -o gpiomonh -O3 -l gpiod
+
+# gcc tools-common.c dev_gpiomon.c -o dev_gpiomon -O3 -l gpiod
